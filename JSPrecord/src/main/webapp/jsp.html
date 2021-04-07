@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>演示页面</title>
+</head>
+<body>
+<%!
+    int click = 0;
+%>
+<p>
+    1+2+3+...+99+100 =
+    <%
+        int result = 0;
+        for(int i=1; i<=100; i++){
+            result += i;
+        }
+        out.print(result);
+
+        click++;
+    %>
+</p>
+<p>你是第<%= click %>位访客</p>
+</body>
+</html>

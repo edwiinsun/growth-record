@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.sql.*" pageEncoding="UTF-8"%>
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
 <head> <title>删除一条记录页面</title> </head>
 <body>
 <%

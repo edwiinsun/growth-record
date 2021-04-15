@@ -1,8 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
 <head> <title>修改记录的条件提交页面</title></head>
 <body>
-请选择修改记录所满足的条件<hr width="100%" size="3">
+请选择修改记录所满足的条件<hr>
 <form action= "update stu 2 edit.jsp" method="post"> 
 <br>
 姓名: <input type="text" name ="name"><br><br>

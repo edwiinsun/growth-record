@@ -5,7 +5,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<html lang="en">
   <head>
     <base href="<%=basePath%>">
     
@@ -24,6 +24,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <%String str=request.getParameter("userName"); %>
-    <font color="blue" size="12px"><%=str %></font>你好,欢迎
+    <p color="blue" size="12px"><%=str %></p>你好,欢迎
   </body>
 </html>

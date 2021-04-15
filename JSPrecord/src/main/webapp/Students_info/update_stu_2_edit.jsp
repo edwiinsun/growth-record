@@ -1,5 +1,6 @@
 <%@page contentType="text/html" import="java.sql.*" pageEncoding="UTF-8"%>
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
 <head><title>修改编辑页面</title> </head>
 <body>
 <%String driverName="com.mysql.jdbc.Driver";
@@ -34,14 +35,14 @@ if(pstmt!= null){ pstmt.close(); }
 if(conn!=null){ conn.close();}
 %>
 <form action="update_stu_2.jsp" method="post">
-<table border="0" width="238" height="252">
-<tr><td>学号</td><td><input name="id" value =<%=id%>></td></tr>
-<tr><td>姓名</td><td><input name="name2" value=<%=name2%>></td></tr>
-<tr><td>性别</td><td><input name="sex2" value=<%=sex2%>></td></tr>
-<tr><td>年龄</td><td><input name="age" value=<%=age%>></td></tr>
-<tr><td>体重</td><td><input name="weight"value=<%=weight%>></td></tr>
-<tr><td>身高</td><td><input name="hight"value=<%=hight%>></td></tr>
-<tr align="center">
+<table>
+<tr><th>学号</th><td><input name="id" value =<%=id%>></td></tr>
+<tr><th>姓名</th><td><input name="name2" value=<%=name2%>></td></tr>
+<tr><th>性别</th><td><input name="sex2" value=<%=sex2%>></td></tr>
+<tr><th>年龄</th><td><input name="age" value=<%=age%>></td></tr>
+<tr><th>体重</th><td><input name="weight"value=<%=weight%>></td></tr>
+<tr><th>身高</th><td><input name="hight"value=<%=hight%>></td></tr>
+<tr >
 <td colspan="2">
 <input type ="submit" value="提  交">&nbsp;&nbsp;&nbsp;&nbsp;
 <input type ="reset" value="取  消"> </td> </tr>
@@ -56,3 +57,13 @@ if(conn!=null){ conn.close(); }
 }%>
 </body>
 </html>
+<style>
+tr{
+text-align:center;
+}
+table{
+border:0px,
+ width:238px,
+  height:252px,
+}
+</style>

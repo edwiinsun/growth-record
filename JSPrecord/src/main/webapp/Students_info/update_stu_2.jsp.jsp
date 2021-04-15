@@ -7,7 +7,7 @@
 String driverName="com.mysql.jdbc.Driver";
 String userName="root";
 String userPwd="sunwin";
-String dbName="win";
+String dbName="mysql";
 String url1="jdbc:mysql://localhost:3306/"+dbName;
 String url2="?user="+userName+"&password="+userPwd;
 String url3="&useUnicode=true&characterEncoding=UTF-8";

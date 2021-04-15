@@ -17,7 +17,7 @@
     String driverName="com.mysql.jdbc.Driver";
     String userName="root";
     String userPwd="sunwin";
-    String dbName="win";
+    String dbName="mysql";
     String url1="jdbc:mysql://localhost:3306/"+dbName;
     String url2="?user="+userName+"&password="+userPwd;
     String url3="&useUnicode=true&characterEncoding=UTF-8";
@@ -26,6 +26,7 @@
     Connection conn= DriverManager.getConnection(url);
     String sql="Insert into stu_info(id,name,sex,age,weight,hight) values(?,?,?,?,?,?)";
     PreparedStatement pstmt=conn.prepareStatement(sql);
+    
     pstmt.setInt(1,10);
     pstmt.setString(2,"张三");
     pstmt.setString(3,"男");

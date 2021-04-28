@@ -8,21 +8,21 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
+<html>
 <head>
     <title>修改记录页面</title>
 </head>
 <body>
-<%String driverName="com.mysql.jdbc.Driver";
-    String userName="root";
-    String userPwd="sunwin";
-    String dbName="mysql";
+<%
+    String driverName="com.mysql.jdbc.Driver";      //驱动程序名
+    String userName="root";                         //数据库用户名
+    String userPwd="sunwin";                        //密码
+    String dbName="win";                            //数据库名
     String url1="jdbc:mysql://localhost:3306/"+dbName;
     String url2="?user="+userName+"&password="+userPwd;
     String url3="&useUnicode=true&characterEncoding=UTF-8";
     String url=url1+url2+url3;
-    Class.forName(driverName);
+    Class.forName(driverName);      //加载并注册驱动程序
     Connection conn= DriverManager.getConnection(url);
     request.setCharacterEncoding("UTF-8");
     String sql="update stu_info set weight=? where name=?";

@@ -9,8 +9,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
+<html>
 <head>
     <title>Title</title>
 </head>
@@ -19,7 +18,7 @@
     String driverName="com.mysql.jdbc.Driver";
     String userName="root";
     String userPwd="sunwin";
-    String dbName="mysql";
+    String dbName="win";
     String url1="jdbc:mysql://localhost:3306/"+dbName;
     String url2="?user="+userName+"&password="+userPwd;
     String url3="&useUnicode=true&characterEncoding=UTF-8";

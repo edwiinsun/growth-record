@@ -1,4 +1,7 @@
-<%@ page import="java.sql.PreparedStatement" %><%--
+<%@ page import="java.sql.PreparedStatement" %>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.ResultSet" %><%--
   Created by IntelliJ IDEA.
   User: Jiahe Sun
   Date: 2021/4/11
@@ -7,8 +10,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
+<html>
 <head>
     <title>显示所有学生的页面</title>
 </head>
@@ -18,7 +20,7 @@
 String driverName="com.mysql.jdbc.Driver";
     String userName="root";
     String userPwd="sunwin";
-    String dbName="mysql";
+    String dbName="win";
     String url1="jdbc:mysql://localhost:3306/"+dbName;
     String url2="?user="+userName+"&password="+userPwd;
     String url3="&useUnicode=true&characterEncoding=UTF-8";
@@ -49,7 +51,7 @@ rs.last();  //移至最后一条记录
         {%>
         <tr >
              <td>
-            <%=rs.getRow("")%></td>
+            <%=rs.getRow()%></td>
         <td><%=rs.getString("id")%></td>
         <td><%=rs.getString("name")%></td>
         <td><%=rs.getString("sex")%></td>

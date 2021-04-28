@@ -1,0 +1,14 @@
+//
+// Created by Jiahe Sun on 2021/4/23.
+//
+
+#ifndef GITHUB_ZOJ1004_ANAGRAMSBYSTACK_H
+#define GITHUB_ZOJ1004_ANAGRAMSBYSTACK_H
+
+
+class ZOJ1004_AnagramsByStack {
+
+};
+
+
+#endif //GITHUB_ZOJ1004_ANAGRAMSBYSTACK_H

@@ -1,5 +1,7 @@
 <%@ page import="java.sql.PreparedStatement" %>
 <%@ page import="javax.xml.transform.Result" %>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
 <%--
   Created by IntelliJ IDEA.
   User: Jiahe Sun

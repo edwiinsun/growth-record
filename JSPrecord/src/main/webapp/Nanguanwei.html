@@ -1,0 +1,418 @@
+<!--
+ * @Author: @Edwin
+ * @Date: 2021-05-10 16:07:15
+ * @LastEditors: @Edwin
+ * @LastEditTime: 2021-05-10 17:53:10
+ * @FilePath: \growth-record\JSPrecord\src\main\webapp\Nanguanwei.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="路壮Zoe">
+  <title>山东农业大学南校区网站</title>
+  <style type="text/css">
+    @keyframes wordsLoop {
+      0% {
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+      }
+
+      100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+      }
+    }
+
+    @-webkit-keyframes wordsLoop {
+      0% {
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+      }
+
+      100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+      }
+    }
+
+    .newFrag {
+      width: 300px;
+      margin: 0 auto;
+      border: 1px solid #ff6700;
+      overflow: hidden;
+    }
+
+    .scroll {
+      padding-left: 20px;
+      font-size: 12px;
+      color: #000;
+      display: inline-block;
+      white-space: nowrap;
+      animation: 10s wordsLoop linear infinite normal;
+    }
+
+    .topimg {
+      width: 100%;
+      height: 120px;
+    }
+
+    .topimg1 {
+      position: absolute;
+      margin-top: 5px;
+      margin-left: 10%;
+      width: 1000px;
+    }
+
+    .topimg2 {
+      position: absolute;
+      right: 10%;
+    }
+
+    .col-sm-4 {
+      height: 350px;
+    }
+
+    .col-sm-12 {
+      height: 250px;
+    }
+
+    .navbgimg {
+      position: absolute;
+      width: 100%;
+      height: 40px;
+
+    }
+
+    #nav {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+    .bottom {
+      background-color: #42a4ff;
+      position: relative;
+      bottom: 0px;
+      width: 100%;
+      height: 100px;
+      padding-top: 12px;
+      text-align: center;
+      color: white;
+    }
+
+    .font {
+      padding: 0px 5px 7px 5px;
+      font-size: 16px;
+      color: #4bc5ff;
+      margin: 0px;
+      font-weight: bold;
+      border-bottom: 1.5px solid #4bc5ff;
+      z-index: 2;
+    }
+
+    .hr {
+      margin-top: 4.5px;
+      margin-bottom: 0px;
+      height: 1.5px;
+      z-index: 1;
+    }
+
+    .quick_nav_img {
+      width: 80%;
+      margin-top: 25px;
+      margin-right: 9px;
+    }
+
+    .quick_nav {
+      margin-left: 20px;
+    }
+
+    .quick_select {
+      border: 0px;
+      color: #4bc5ff;
+      font-size: 15px;
+    }
+
+    .container {
+      margin-top: 60px;
+    }
+
+    .Introduction {
+      text-indent: 2em;
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 20px;
+    }
+
+    a:link {
+      font-size: 11pt;
+      text-decoration: none;
+      color: #2f2f2f;
+      line-height: 1.5em;
+      text-align: justify;
+    }
+
+    a:visited {
+      font-size: 11pt;
+      text-decoration: none;
+      color: #2f2f2f;
+      line-height: 1.5em;
+      text-align: justify;
+    }
+
+    a:hover {
+      font-size: 11pt;
+      color: #4bc5ff;
+      line-height: 1.5em;
+      text-align: justify;
+    }
+
+    a:active {
+      font-size: 11pt;
+      text-decoration: none;
+      color: #2f2f2f;
+      line-height: 1.5em;
+      text-align: justify;
+    }
+
+    #wrapper {
+      overflow: hidden;
+      height: 30px;
+      width: 500px;
+      background: #ccc;
+      color: #006600;
+      margin: 100px auto;
+      text-align: center;
+    }
+  </style>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div style="margin-bottom:0">
+    <div class="head_backgroud">
+      <img class="topimg1" src="/_upload/tpl/07/a0/1952/template1952/images/biaoti.png" />
+      <img class="topimg2" src="/_upload/tpl/07/a0/1952/template1952/images/topbeijing2.png" />
+    </div>
+    <img class="topimg" src="/_upload/tpl/07/a0/1952/template1952/images/topbeijing.png" />
+  </div>
+
+
+  <div id="nav">
+
+    <div frag="窗口11" portletmode="simpleSudyNavi">
+      <div frag="窗口内容">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <a href="http://202.194.131.218/_s30/1103/list.psp"> <span class="font">校园风采</span> </a>
+        <div class="hr" style="background: lightgray"></div>
+        <div frag="窗口1" portletmode="tpl2_dtjt8">
+          <div frag="窗口内容">
+            <!--[WP1TO3]-->
+            <table>
+              <tr>
+                <td>
+                  <font style="font-weight:bold;">
+                    (频道)
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-4">
+        <a href="http://202.194.131.218/_s30/1100/list.psp"> <span class="font">校区公告</span> </a>
+        <div class="hr" style="background: lightgray"></div>
+        <div frag="窗口3" portletmode="simpleNews">
+          <div frag="窗口内容">
+            <!--[WP1TO3]-->
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="10" height="40"></td>
+
+                <td style="color: #4bc5ff">(频道)</td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="http://202.194.131.218/_s30/1104/list.psp"> <span class="font">校区简介</span> </a>
+        <div class="hr" style="background: lightgray"></div>
+        <div frag="窗口111" portletmode="tpl2_imgscroll2" style="margin-top: 35px;text-align: center" class="newsFrag"
+          overflow: hidden;>
+          <div id="wrapper" frag="窗口内容" class="scroll" style="color: #0f0f0f">
+            <!--[WP1TO3]-->
+            <!-- <table width="100%" border="0" animation: 10s wordsLoop linear infinite normal; cellpadding="0" @keyframes
+              wordsLoop { 0% { transform: translateX(200px); -webkit-transform: translateX(200px); } 100% { transform:
+              translateX(-100%); -webkit-transform: translateX(-100%); } } @-webkit-keyframes wordsLoop { 0% {
+              transform: translateX(200px); -webkit-transform: translateX(200px); } 100% { transform: translateX(-100%);
+              -webkit-transform: translateX(-100%); } } cellspacing="0">
+            </table> -->
+             
+            <div id="demo1">
+            </div>
+            <div id="demo2">
+            </div>
+
+            <!-- 
+<div class="row">
+      <div class="col-sm-12">
+        <a href="http://202.194.131.218/_s30/1103/list.psp"> <span class="font">魅力南校</span> </a>
+        <div class="hr" style="background: lightgray"></div>
+        <div frag="窗口7" portletmode="tpl2_imgscroll2" style="margin-top: 35px;text-align: center">
+          <div frag="窗口内容"> </div>
+        </div>
+        <hr class="hidden-sm hidden-md hidden-lg">
+      </div>
+    </div>
+
+ -->
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div class="row">
+        <div class="col-sm-4">
+          <a href="http://202.194.131.218/_s30/1104/list.psp"> <span class="font">校区简介</span> </a>
+          <div class="hr" style="background: lightgray"></div>
+          <div frag="窗口111">
+            <div frag="窗口内容" style="color: #0f0f0f"> -->
+      <!--[WP1TO3]-->
+      <!-- <table width="100%" border="0" cellpadding="0" cellspacing="0">
+&emsp;&emsp;山东农业大学南校区位于泰安市城区东南，距北校区7公里，中心片区于2003年9月建成并投入使用，东南片区于2019年8月建成使用。校区由教学园区、科技园区、学生生活园区三部分组成。校区西靠温泉路，南临畔河大街，交通便利。校区内百花争艳，硕果飘香，四季葱茏，环境优美。目前，有17个教学学院在南校区办学，在校学生20560名。<br>
+          &emsp;&emsp;南校区占地面积2200亩，建筑面积30.3万平方米，是一座集数字化、园林化、生态化于一体的现代化校区。校区建筑风格充分体现了小群体、大个体、紧密型、放射型的设计构想；校区建设坚持了高起点规划、高标准建设、高效能管理的原则。中心片区综合教学楼建筑面积为36000平方米，楼内设有教室106个，其中多媒体教室89个。实验楼建筑面积为28000平方米，设有14个实验教学中心，建有先进的数码互动实验室和多媒体实验室等，完全满足培养学生实践创新能力的需要。
+              </table>
+            </div>
+          </div>
+        </div>
+       -->
+
+
+
+      <div class="col-sm-4" height="160">
+        <a href="http://202.194.131.218/_s30/_t1868/1102/list.psp"> <span class="font">新闻动态</span> </a>
+        <div class="hr" style="background: lightgray"></div>
+        <div frag="窗口2" portletmode="simpleNews" style="color: #0f0f0f">
+          <div frag="窗口内容" style="color: #0f0f0f">
+            <!--[WP1TO3]-->
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="10" height="40"></td>
+                <td style="color: #4bc5ff">(频道)</td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <a href="http://www.sdau.edu.cn/13/list.htm"><span class="font">快速导航</span></a>
+        <div class="hr" style="background: lightgray"></div>
+        <!--            <div>-->
+        <!--                <img src="/_upload/tpl/07/a0/1952/template1952/images/home_img5.png" class="quick_nav_img">-->
+        <!--                <img src="/_upload/tpl/07/a0/1952/template1952/images/home_img7.png" class="quick_nav_img">-->
+        <!--                <img src="/_upload/tpl/07/a0/1952/template1952/images/home_img6.png" class="quick_nav_img">-->
+        <!--            </div>-->
+        <table>
+          <tr>
+            <td> <a href="http://202.194.131.218/_s30/1101/list.psp"> <img
+                  src="/_upload/tpl/07/a0/1952/template1952/images/home_img5.png" class="quick_nav_img" /> </a>
+            </td>
+            <td> <a href="http://hqc.sdau.edu.cn/_t66/2013/0322/c1057a14126/page.htm"> <img
+                  src="/_upload/tpl/07/a0/1952/template1952/images/home_img7.png" class="quick_nav_img" /> </a>
+            </td>
+            <td> <a href="http://ngw.sdau.edu.cn/_t50/2015/1012/c1101a11670/page.htm"> <img
+                  src="/_upload/tpl/07/a0/1952/template1952/images/home_img6.png" class="quick_nav_img" /> </a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="@V_URL[L:S30:T50:C1101]" style="color: #4bc5ff" class="quick_nav">文件下载</a>
+            </td>
+            <td>
+              <a href="@V_URL[I:S28:T66:C1057:A14126]" style="color: #4bc5ff" class="quick_nav">班车时刻</a>
+            </td>
+            <td><a href="@V_URL[I:S30:T50:C1101:A11670]" style="color: #4bc5ff" class="quick_nav">电话查询</a>
+            </td>
+          </tr>
+        </table>
+        <hr width="250px">
+        <div class="dropdown">
+          <select class="quick_select">
+            <option value="" selected>友情链接</option>
+            <option value=http://www.sdau.edu.cn />农大首页</option>
+            <option value=http://jiaowu.sdau.edu.cn />选课系统</option>
+            <option value=http://yjsc.sdau.edu.cn />研究生工作</option>
+            <option value=http://zhaosheng.sdau.edu.cn/new />招生信息网</option>
+          </select>
+        </div>
+        <hr width="250px">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <a href="http://202.194.131.218/_s30/1103/list.psp"> <span class="font">魅力南校</span> </a>
+        <div class="hr" style="background: lightgray"></div>
+        <div frag="窗口7" portletmode="tpl2_imgscroll2" style="margin-top: 35px;text-align: center">
+          <div frag="窗口内容"> </div>
+        </div>
+        <hr class="hidden-sm hidden-md hidden-lg">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bottom">
+    <p>Copyright © 2011 All Rights Reserved</p>
+    <p>鲁ICP备05002369号 | 版权所有 © 山东农业大学南校区 | 地址:山东省泰安市泮河大街7号 | 邮政编码：271017</p>
+  </div>
+
+</body>
+
+</html>
+
+<script>
+  var speed = 80;  // 可自行设置文字滚动的速度
+
+  var wrapper = document.getElementById('wrapper');
+  var demo1 = document.getElementById('demo1');
+  var demo2 = document.getElementById('demo2');
+
+  demo2.innerHTML = demo1.innerHTML   //克隆demo1为demo2  
+  function Marquee() {
+    if (demo2.offsetHeight - wrapper.scrollTop <= 0)  //当滚动至demo1与demo2交界时  
+      wrapper.scrollTop -= demo1.offsetHeight    //demo跳到最顶端  
+    else {
+      wrapper.scrollTop++   //如果是横向的 将 所有的 height top 改成 width left  
+    }
+  }
+
+  var MyMar = setInterval(Marquee, speed)  //设置定时器  
+  wrapper.οnmοuseοver = function () { clearInterval(MyMar) }   //鼠标移上时清除定时器达到滚动停止的目的  
+  wrapper.οnmοuseοut = function () { MyMar = setInterval(Marquee, speed) }  //鼠标移开时重设定时器  
+</script>

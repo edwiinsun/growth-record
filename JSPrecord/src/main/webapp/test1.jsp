@@ -1,28 +1,39 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>添加</title>
 </head>
 <body>
-	<%!String chao; %>
-	<%
-		Date d=new Date();
-		int hour=d.getHours();
-		if(hour>=0&&hour<12)
-			chao="早上好";
-		if(hour==12)
-			chao="中午好";
-		if(hour>12&&hour<=18)
-			chao="下午好";
-		if(hour>18&&hour<0)
-			chao="晚上好";
-	%>
-	<%=chao %>
-	<br/>
-	<%=d %>
+<h1 align="center">学生信息添加</h1>
+<hr>
+	<form action="../Main2/Add1.jsp" method="post">
+		<table align="center">
+			<tr>
+				<td>学号</td><td><input type="number" name="sid" value=""></td>
+			</tr>
+			<tr>
+				<td>姓名</td><td><input type="text" name="sname" value=""></td>
+			</tr>
+			<tr>
+				<td>性别</td><td><input type="text" name="ssex" value=""></td>
+			</tr>
+			<tr>
+				<td>年龄</td><td><input type="number" name="sage" value=""></td>
+			</tr>
+			<tr>
+				<td>体重</td><td><input type="text" name="sweight" value=""></td>
+			</tr>
+			<tr>
+				<td>身高</td><td><input type="text" name="shight" value=""></td>
+			</tr>
+			<tr>
+				<td></td><td><input type="submit" value="确定" >&nbsp;&nbsp;&nbsp;
+							<input type="reset" value="取消" ></td>
+			</tr>
+		</table>
+	</form>	
 </body>
 </html>

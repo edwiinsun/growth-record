@@ -2,7 +2,7 @@
  * @Author: @Edwin
  * @Date: 2021-05-14 19:02:42
  * @LastEditors: @Edwin
- * @LastEditTime: 2021-05-14 19:10:22
+ * @LastEditTime: 2021-05-15 08:24:22
  * @FilePath: \growth-record\Algorithm\src\LongestMonotoneIncreasingSubsequence.cpp
  * @Description: 最长单调递增子序列
  */
@@ -21,7 +21,7 @@ int main()
   int endw[len] = {1};
   for (int i = 0; i < len; i++)
   {
-    for (int j = 0; j < len; j++)
+    for (int j = 0; j < i; j++)
     {
       if ((sequence[j] < sequence[i]) && (endw[j] + 1 > endw[i]))
       {
